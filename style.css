@@ -17,6 +17,25 @@ body, html {
     animation-direction: alternate;
 }
 
+div {
+    float: left;
+}
+.ganesh {
+    background-color: #BFB4C4;
+    width: 100px;
+    height: 200px;
+    transition-property: width, height, background-color, color;
+    transition-duration: 4s;
+    transition-timing-function: ease-in-out;
+    
+}
+.ganesh:hover {
+    color: #4C056A;
+    
+    width: 400px;
+    
+    }
+
 @keyframes growing {
     from {
         height: 0;
