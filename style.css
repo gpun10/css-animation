@@ -4,10 +4,12 @@ body, html {
 }
 
 .box {
-    background-color: #000;
+    background-color: #16851D;
     width: 150px;
     height:0;
-    
+     transition-property: width, height, background-color, color;
+       transition-duration: 1s;
+    transition-timing-function: ease-in-out;
     margin: 25px;
     animation-name: growing;
     animation-duration: 2s;
@@ -36,6 +38,10 @@ div {
     width: 400px;
     
     }
+    
+.box:hover {
+    background-color: #47F652;
+}
 
 @keyframes growing {
     from {
