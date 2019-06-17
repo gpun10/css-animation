@@ -21,9 +21,10 @@ div {
     float: left;
 }
 .ganesh {
+    margin: 25px;
     background-color: #BFB4C4;
-    width: 100px;
-    height: 200px;
+    width: 200px;
+    height: 100px;
     transition-property: width, height, background-color, color;
     transition-duration: 4s;
     transition-timing-function: ease-in-out;
