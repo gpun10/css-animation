@@ -7,6 +7,7 @@ body, html {
     background-color: #16851D;
     width: 150px;
     height:0;
+    font-size: 2em;
      transition-property: width, height, background-color, color;
        transition-duration: 1s;
     transition-timing-function: ease-in-out;
@@ -24,16 +25,24 @@ div {
 }
 .ganesh {
     margin: 25px;
-    background-color: #BFB4C4;
+    background-color: #196F3D;
+    color: #D2B4DE;
     width: 200px;
     height: 100px;
-    transition-property: width, height, background-color, color;
-    transition-duration: 4s;
+   transition-property: all;
+    transition-duration: 10s;
     transition-timing-function: ease-in-out;
     
 }
+
+.span:hover {
+    position: relative;
+    left: 200px;
+    
+}
+
 .ganesh:hover {
-    color: #4C056A;
+    color: #F4F6F7;
     
     width: 400px;
     
@@ -41,13 +50,16 @@ div {
     
 .box:hover {
     background-color: #47F652;
+    
 }
 
 @keyframes growing {
     from {
-        height: 0;
+        height: 10px;
+        font-size: 0.1em;
     }
     to {
-        height: 150px;
+        height: 255px;
+        font-size: 2em;
     }
 }
