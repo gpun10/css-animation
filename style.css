@@ -16,24 +16,25 @@ body, html {
     transition-timing-function: ease-in-out;
     margin: 25px;
     animation-name: growing;
-    animation-duration: 2s;
+    animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    animation-play-state: running;
 }
 
-div {
+.box {
     float: left;
 }
 .ganesh {
-    margin: 25px;
+    margin: 5px;
     background-color: #196F3D;
-    
+    float: left;
     color: #D2B4DE;
-    width: 200px;
-    height: 100px;
-   transition-property: all;
+    height: 70px;
+    
+   transition-property: height,color;
     transition-duration: 10s;
     transition-timing-function: ease-in-out;
     
@@ -48,13 +49,48 @@ div {
 .ganesh:hover {
     color: #F4F6F7;
     
-    width: 400px;
+    height: 30vw;
     
     }
     
 .box:hover {
     background-color: #47F652;
     
+}
+
+.heart {
+    margin: 25px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    background: red;
+    position: absolute;
+    left: 500px;
+    top: 300px;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+.heart:before, .heart:after {
+    content: '';
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: absolute;
+    display: block;
+    background: red;
+}
+
+.heart:after {
+    top: -50%;
+    right: 0;
+}
+.heart:before {
+    top: 0;
+    left: -50%;
 }
 
 @keyframes growing {
