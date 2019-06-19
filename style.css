@@ -66,9 +66,10 @@ body, html {
     -webkit-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     background: red;
-    position: absolute;
-    left: 500px;
-    top: 300px;
+    position: fixed;
+    left: 100px;
+    top: 100px;
+    
     float: left;
     width: 100px;
     height: 100px;
